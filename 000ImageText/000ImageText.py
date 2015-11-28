@@ -8,7 +8,8 @@ def imgaddingtext(filepath,text,fonttype='arial.ttf',color='black'):
     font=ImageFont.truetype(fonttype,(min(img.size))/5)
     draw.text((x/2,y/2),text,fill=color,font=font)
     img.save((os.path.dirname(filepath))+'\\''new.jpg')
-    
+
+#设置变量的默认随机值    
 import random
 listfont=['arial.ttf']
 listcolor=['red','black','brown','white','pink','yellow']
