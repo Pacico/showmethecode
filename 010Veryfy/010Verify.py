@@ -3,12 +3,12 @@
 # -*- coding:cp936 -*-
 from PIL import Image, ImageDraw , ImageFont, ImageFilter
 import random
+from random import randint as rdm
 import glob
 import string
 def rmcolor():
     return (random.randrange(50,150),random.randrange(50,150),random.randrange(50,150))
-def rdm(x=0,y=1):
-    return random.randint(x,y)
+
 def main():
     verify_size=(300,100)
     font_lib=glob.glob('c:Windows\Fonts\\*.ttf')
